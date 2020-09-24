@@ -1,0 +1,85 @@
+.grid-container {
+    display: grid;
+    grid-gap: 3em;
+    grid-template-areas:
+        "today"
+        "header"
+        "content";
+}
+
+.today{
+    grid-area: today;
+    display: flex;
+    overflow-x: auto;
+
+}
+
+.header {
+    grid-area: header;
+    margin: 10px;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    overflow-x:auto;
+}
+
+.global_search{
+    display: flex;
+    justify-content: center;
+
+}
+
+input::placeholder {
+    padding-left: 7px;
+}
+
+.global_search_input{
+    width: 223.3px;
+
+    background: #FFFFFF no-repeat 95%; /*right **/
+    border: 1px solid rgb(33, 59, 136);
+    box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15), 0px 1px 0px rgba(63, 63, 68, 0.05);
+    border-radius: 6px;
+    top: 10px;
+    justify-content: center;
+    text-align: left;
+    outline: none;
+}
+
+.card_text{
+    display: flex;
+    justify-content: center;
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0d2237;
+}
+
+.favorites_btn{
+    display: flex;
+    height: 7vh;
+    width: 20vw;
+    margin-left: 25vh;
+}
+
+.favorites{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background-color: rgb(68, 97, 109);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
