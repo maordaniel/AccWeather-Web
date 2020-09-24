@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-export const apiKey = "UZz9q6hIb9ElwJZ6YbPkNKReCT5ua3l7";
+export const apiKey = "OvRHhEwVWPRJbkeY2wkCVx4vZZxCXvfN";
 
 const ax = axios.create({
     baseURL:'http://dataservice.accuweather.com',
