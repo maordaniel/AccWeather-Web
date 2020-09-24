@@ -1,4 +1,4 @@
-React weather application built with React, Redux and BootStrap to get weather information from AccWeather APIs.
+A React application to get weather information from AccWeather APIs, built with Redux and BootStrap.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
