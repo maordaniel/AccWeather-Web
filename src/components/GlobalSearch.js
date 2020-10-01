@@ -12,10 +12,6 @@ function GlobalSearch(props) {
     const [text, setText] = useState("");
     const [cities, setCities] = useState([]);
 
-    useEffect(() =>{
-
-    },[cities]);
-
     const clearInput = () =>{
         setText("");
         setCities([]);
@@ -70,9 +66,7 @@ function GlobalSearch(props) {
     };
 
     const citiesCard = () =>{
-        if (cities.length > 0){
-            return cities.map(city => <CityCard temp={false} key={city["Key"]} city={city}/>);
-        }
+        return cities.map(city => <CityCard temp={false} key={city["Key"]} city={city}/>);
     }
 
     const notify = () => toast("Connection Problem");
