@@ -91,13 +91,11 @@ function MainScreen(props) {
     };
 
     const fiveDaysWeather = () =>{
-        if (dailyForecasts.length > 0){
-            return dailyForecasts.map(item =>
-                    <WeatherCard key={item["EpochDate"]} header={city["LocalizedName"]} date={item["Date"]}
-                                 unit={props.main.unit ? "C" : "F"}
-                                 data={item["Temperature"]} icon={item["Day"]["Icon"]}/>
-                );
-        }
+        return dailyForecasts.map(item =>
+                <WeatherCard key={item["EpochDate"]} header={city["LocalizedName"]} date={item["Date"]}
+                             unit={props.main.unit ? "C" : "F"}
+                             data={item["Temperature"]} icon={item["Day"]["Icon"]}/>
+            );
     }
 
     const todayWeather = () =>{
