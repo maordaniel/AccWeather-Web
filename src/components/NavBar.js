@@ -8,7 +8,7 @@ function NavBar(){
     return(
         <div className={"nav_bar"}>
             <h4 style={{color:'#bea3a3',margin:'15px'}}>
-                Herolo weather Task
+                AccWeather
             </h4>
              <Nav className="justify-content-end" style={{margin:'10px'}}>
                  <Nav.Item>
