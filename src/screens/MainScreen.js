@@ -35,8 +35,8 @@ function MainScreen(props) {
                 const res = await GetData(`/locations/v1/cities/geoposition/search`, params);
                 if (res.status === 200){
                     const location = {"id":res.data["Key"], LocalizedName: res.data["EnglishName"], Country:res.data["Country"]};
-                    await getCurrentWeather(location);
-                    await getDailyWeather(location);
+                    getCurrentWeather(location);
+                    getDailyWeather(location);
                 }
             }catch (e){
                 notify();
