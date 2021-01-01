@@ -1,4 +1,4 @@
-React application that shows weather information, using AccuWeather's API, built with Redux and BootStrap.
+A React application that shows weather information, using AccuWeather's API, built with Redux and BootStrap.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
